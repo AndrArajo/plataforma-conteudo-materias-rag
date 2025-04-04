@@ -1,0 +1,9 @@
+services:
+  app-plataforma:
+    image: bitnami/laravel:12
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+    env_file:
+      - .env
